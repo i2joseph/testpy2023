@@ -1,4 +1,4 @@
-# Industry Intelligence Python Backend Test #
+# Python Backend Test #
 
 ## Objective: ##
 - REST API for managing product category tree. 
@@ -31,14 +31,15 @@
     - id (number/required)
 
 ## Development setup: ## 
-- execute `docker-compose -f docker-compose.yml up`
-- execute `pip install -r requirements.txt`
-- execute `python init_db.py`
+- `docker-compose -f docker-compose.yml up`
+- `pip install -r requirements.txt`
+- `python init_db.py`
 
 ## Postgres / Database Info: ## 
 - Host: `localhost`
 - Port: `5432`
-- Database name: `i2`
-- Database username: `i2fwd`
-- Database password: `i2fwd`
-- Table name: `Categories`
+- DB name: `i2`
+- DB user: `i2fwd`
+- DB password: `i2fwd`
+- Table: `Categories`
+- Table sequence: `Category_Seq`
