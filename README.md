@@ -10,8 +10,7 @@
 ## API Info: ## 
 - End point: /web/category
 
-- Method: GET
-- Output:
+- GET
     - tree (array of item)
     - item model:
         - id (number)
@@ -19,25 +18,16 @@
         - level (number)
         - children (array of item)
 
-- Method: POST
-- Input:
+- POST
     - name (string/required)
     - parent (number)
-- Output:
-    - status (boolean)
 
-- Method: PUT
-- Input:
+- PUT
     - id (number/required)
     - name (string/required)
-Output:
-    - status (boolean)
 
-- Method: DELETE
-- Input:
+- DELETE
     - id (number/required)
-- Output:
-    - status (boolean)
 
 ## Development setup: ## 
 - execute `docker-compose -f docker-compose.yml up`
