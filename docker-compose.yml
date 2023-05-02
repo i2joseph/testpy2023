@@ -1,0 +1,12 @@
+version: '3'
+services:
+  database:
+    image: "postgres:13.3-alpine"
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_PASSWORD=i2fwd
+      - POSTGRES_USER=i2fwd
+      - POSTGRES_DB=i2
+    volumes:
+      - ./_data-dev/postgres-data:/var/lib/postgresql/data
