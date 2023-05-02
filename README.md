@@ -1,11 +1,13 @@
 # Industry Intelligence Python Backend Test #
 
 ## Objective: ##
-- REST API for managing category tree. 
+- REST API for managing product category tree. 
 
 ## Tasks: ##
-- Create a table in Postgres to keep the data that user enter.
-- Create a REST API for display, save, delete and update the data.
+- Create single/one table in Postgres for the persistent storage.
+- Create a REST API in Python to save, delete, update and display the data.
+- Add the validation subcategory deep level. The maximum level is 3.    
+- Test the API with Postman.
 
 ## API Info: ## 
 - End point: /web/category
