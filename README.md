@@ -4,7 +4,6 @@
 - REST API for managing product category tree. 
 
 ## Tasks: ##
-- Create single/one table in Postgres for the persistent storage.
 - Create a REST API in Python to save, delete, update and display the data.
 - Add the validation subcategory deep level. The maximum level is 3.    
 - Test the API with Postman.
@@ -33,10 +32,13 @@
 
 ## Development setup: ## 
 - execute `docker-compose -f docker-compose.yml up`
+- execute `pip install -r requirements.txt`
+- execute `python init_db.py`
 
-## Postgres Info: ## 
+## Postgres / Database Info: ## 
 - Host: `localhost`
 - Port: `5432`
 - Database name: `i2`
 - Database username: `i2fwd`
 - Database password: `i2fwd`
+- Table name: `Categories`
