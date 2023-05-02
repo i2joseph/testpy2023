@@ -2,3 +2,4 @@
 **/.idea/
 **/.vscode/
 _data-dev/*
+.DS_Store
