@@ -3,3 +3,4 @@
 **/.vscode/
 _data-dev/*
 .DS_Store
+__pycache__
