@@ -3,15 +3,15 @@ import psycopg2
 def init_rdbms():
     commands = (
         """
-        CREATE TABLE i2.public.categories (
+        CREATE TABLE categories (
 	        id numeric NOT NULL,
 	        category varchar(255) NOT NULL,
 	        parent numeric,
 	        PRIMARY KEY (id)
         )
         """,
-        """ALTER TABLE i2.public.categories ADD FOREIGN KEY (parent) REFERENCES categories (id)""",
-        """CREATE SEQUENCE public."Category_Seq" INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START 1 CACHE 1 NO CYCLE"""
+        """ALTER TABLE categories ADD FOREIGN KEY (parent) REFERENCES categories (id)""",
+        """CREATE SEQUENCE Category_Seq INCREMENT BY 1 MINVALUE 1 MAXVALUE 9223372036854775807 START 1 CACHE 1 NO CYCLE"""
     )
     conn = None
     try:
